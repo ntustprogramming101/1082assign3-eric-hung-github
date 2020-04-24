@@ -149,7 +149,7 @@ void draw() {
 
 		for(int i=0;i<24;i++){
 			for(int j=0;j<8;j++){
-				switch (i/soilColorSpan) {
+				switch (floor(i/soilColorSpan)) {
 					case 0:
 						image(soil0,j*chunkSize ,i*chunkSize);
 						if(i==j){
